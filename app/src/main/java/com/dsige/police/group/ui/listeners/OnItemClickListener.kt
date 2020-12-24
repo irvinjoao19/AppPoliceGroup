@@ -1,0 +1,42 @@
+package com.dsige.police.group.ui.listeners
+
+import android.view.View
+import com.dsige.police.group.data.local.model.*
+
+interface OnItemClickListener {
+    interface AreaListener {
+        fun onItemClick(a: Area, view: View, position: Int)
+    }
+
+    interface PersonalListener {
+        fun onItemClick(p: Personal, view: View, position: Int)
+    }
+
+    interface ParteDiarioListener {
+        fun onItemClick(p: ParteDiario, view: View, position: Int)
+    }
+
+    interface EstadoListener {
+        fun onItemClick(e: Estado, view: View, position: Int)
+    }
+
+    interface EmpresaListener {
+        fun onItemClick(e: Empresa, view: View, position: Int)
+    }
+
+    interface CargoListener {
+        fun onItemClick(c: Cargo, view: View, position: Int)
+    }
+
+    interface TipoDocumentoListener {
+        fun onItemClick(t: TipoDocumento, view: View, position: Int)
+    }
+
+    interface PhotoListener {
+        fun onItemClick(p: ParteDiarioPhoto, view: View, position: Int)
+    }
+
+    interface OtMultiPhotoListener {
+        fun onItemClick(s: String, view: View, position: Int)
+    }
+}
